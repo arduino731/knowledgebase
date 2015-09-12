@@ -1,0 +1,23 @@
+this is edit blog! 
+
+<div ng-controller="BlogEditCtrl">
+<h3>Edit Blog</h3>
+<form ng-submit="updateBlog()">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="form-group">
+				<label>Blog Title</label>
+				<input type="text" class="form-control" ng-model="blog.title" name="title" placeholder="title">
+			</div>
+			<div class="form-group">
+				<label>Body Text</label>
+				<textarea type="text" class="form-control" ng-model="blog.body"  rows="7" name="body" placeholder="Enter Blog Body"></textarea>
+			</div>
+		</div>
+	</div>
+	<div class="pull-right">
+		<button type="submit" class="btn btn-primary">Submit</button>
+		<a href="#/blogs" class="btn btn-danger">Cancel</a>
+	</div>
+</form>
+</div>
